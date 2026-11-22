@@ -1,6 +1,6 @@
 {
   "name": "treelines",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Headless layout, connector lines and behaviour for trees and layered graphs in React. You render the nodes.",
   "keywords": [
     "react",
@@ -14,7 +14,7 @@
     "dependency-graph",
     "unstyled"
   ],
-  "homepage": "https://github.com/Agnes-HQ/treelines#readme",
+  "homepage": "https://agnes-hq.github.io/treelines/",
   "bugs": "https://github.com/Agnes-HQ/treelines/issues",
   "repository": {
     "type": "git",

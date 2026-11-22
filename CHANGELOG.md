@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- The package's homepage is now the demo page, https://agnes-hq.github.io/treelines/. No code changes.
+
 ## 0.1.0
 
 The first release.
