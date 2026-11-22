@@ -59,7 +59,9 @@
     "build": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && tsup",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "check": "npm run typecheck && npm test && npm run build && node test/smoke.mjs"
+    "check": "npm run typecheck && npm test && npm run build && node test/smoke.mjs",
+    "site:dev": "vite site",
+    "site:build": "vite build site"
   },
   "peerDependencies": {
     "react": ">=18"
@@ -68,11 +70,13 @@
     "@types/node": "^24.0.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.2.0",
     "happy-dom": "^20.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "tsup": "^8.5.0",
     "typescript": "^5.9.3",
+    "vite": "^7.3.8",
     "vitest": "^4.0.0"
   },
   "publishConfig": {
