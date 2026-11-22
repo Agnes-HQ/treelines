@@ -1,0 +1,82 @@
+{
+  "name": "treelines",
+  "version": "0.1.0",
+  "description": "Headless layout, connector lines and behaviour for trees and layered graphs in React. You render the nodes.",
+  "keywords": [
+    "react",
+    "headless",
+    "tree",
+    "graph",
+    "dag",
+    "layout",
+    "connectors",
+    "org-chart",
+    "dependency-graph",
+    "unstyled"
+  ],
+  "homepage": "https://github.com/Agnes-HQ/treelines#readme",
+  "bugs": "https://github.com/Agnes-HQ/treelines/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agnes-HQ/treelines.git"
+  },
+  "license": "MIT",
+  "author": "Agnes (https://agnes.dev)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./core": {
+      "import": {
+        "types": "./dist/core.d.ts",
+        "default": "./dist/core.js"
+      },
+      "require": {
+        "types": "./dist/core.d.cts",
+        "default": "./dist/core.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && tsup",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "check": "npm run typecheck && npm test && npm run build && node test/smoke.mjs"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "happy-dom": "^20.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
