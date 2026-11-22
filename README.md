@@ -5,6 +5,8 @@
   </picture>
 </h1>
 
+[![Agnes health score](https://app.agnes.dev/badge/cf91925a-3f05-4d4d-8bb8-673097047015.svg)](https://app.agnes.dev/p/cf91925a-3f05-4d4d-8bb8-673097047015)
+
 Headless layout, connector lines and behaviour for trees and layered graphs in React. **You render the nodes.**
 
 Give it nested data, or nodes and edges, and render each node as whatever element you like. treelines places them in
