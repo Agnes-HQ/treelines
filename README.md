@@ -19,6 +19,9 @@ and no cards of its own: state reaches your markup as data attributes, so you st
 - **Fixed or measured sizes:** fixed sizes lay out on the server too; measured ones adapt to whatever you render.
 - **Small:** no runtime dependencies, React 18 and 19, MIT.
 
+**[Live demo](https://agnes-hq.github.io/treelines/)**: a dependency graph, an org chart and a file tree, styled with
+plain CSS.
+
 It powers the dependency graph in [Agnes](https://agnes.dev), which shows which of a repository's dependencies bring in
 vulnerable, outdated or deprecated packages.
 
